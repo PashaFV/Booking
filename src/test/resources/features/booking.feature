@@ -1,5 +1,6 @@
-Feature: search
-  Scenario: Поиск отеля
-    Given
-    When
-    Then 
+Feature: Поиск отеля на сайте booking.com
+  Scenario: Поиск отеля по Минску
+    Given Город поиска: "Минск"
+    When Выполняется поиск отелей по городу
+    Then Отель имеет название: "Sauna Jacuzzi 55\"SmartTV Панорамный вид, Минск-центр города" с рейтингом: "10"
+
